@@ -1,0 +1,18 @@
+.carrito {
+  padding: 0.3rem;
+  width: 5.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 5px;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+}
+.carrito:hover {
+  background-color: #ffffff;
+  color: #0d1b2a;
+}
+.carrito > span {
+  font-weight: 600;
+}/*# sourceMappingURL=CartWidget.css.map */

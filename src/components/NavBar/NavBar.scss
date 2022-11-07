@@ -1,0 +1,26 @@
+.wrapper {
+    box-shadow: #a7ff83 0px 1px 10px 4px;
+}
+
+.title {
+    cursor: pointer;
+    font-size: 3rem;
+    transition: .5s ease-in-out;
+    color: #a7ff83;
+
+    &:hover {
+        color: #ffffff;
+    }
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    & > li {
+        cursor: pointer;
+        transition: .25s ease-in-out;
+    }
+}
