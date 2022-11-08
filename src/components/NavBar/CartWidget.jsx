@@ -3,9 +3,9 @@ import './CartWidget.scss'
 import { useState } from 'react';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
-//ícono del cart traído de la librería Material UI (MUI)
-
 const CartWidget = () => {
+
+    //Icono del cart traído de la librería Material UI (MUI)
     const [count, setCount] = useState(10);
 
     return (

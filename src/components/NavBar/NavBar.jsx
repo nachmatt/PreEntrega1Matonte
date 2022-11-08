@@ -4,7 +4,8 @@ import CartWidget from './CartWidget';
 import './NavBar.scss'
 
 const NavBar = () => {
-
+    
+    //Nav basada en bootstrap.
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-5 wrapper">
             <div className="container-fluid ">
