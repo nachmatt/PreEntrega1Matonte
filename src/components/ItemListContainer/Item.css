@@ -1,0 +1,26 @@
+.items-wrapper {
+  background-color: #1F2937;
+  border-radius: 5px;
+  padding: 1rem;
+  list-style-type: none;
+  color: #ffffff;
+  box-shadow: black 0px 0px 5px 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+.items-wrapper > img {
+  width: 300px;
+  max-height: 300px;
+  filter: drop-shadow(0 0 0.75rem black);
+  transition: 0.25s ease-in-out;
+}
+.items-wrapper > img:hover {
+  transform: scale(1.025);
+}
+.items-wrapper:hover {
+  transform: scale(1.05);
+}/*# sourceMappingURL=Item.css.map */

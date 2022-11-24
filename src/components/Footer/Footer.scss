@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Flow+Rounded&family=Russo+One&display=swap');
+
+.footer-wrapper {
+    box-shadow: #1F2937 0px 0px 5px 1px;
+    background-color: #1F2937;
+    color: #ffffff;
+    padding: .75rem;
+}
+
+
+.title {
+    cursor: pointer;
+    width: fit-content;
+    font-size: 2.5rem;
+    transition: .5s ease-in-out;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: .15rem;
+    font-family: 'Bungee', cursive;
+    margin: 0 auto;
+
+    &:hover {
+        color: #4a698d;
+    }
+
+    & > span {
+        font-family: 'Flow Rounded', cursive;
+        font-size: 1.5rem;
+        letter-spacing: -.09rem;
+        margin-left: 1rem;
+    }
+}

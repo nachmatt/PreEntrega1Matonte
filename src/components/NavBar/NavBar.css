@@ -1,35 +1,35 @@
-.container {
-  width: 100%;
-  height: 7rem;
-  background-color: rgba(13, 27, 42, 0.9);
-  color: #efecec;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: fixed;
-  box-shadow: #FD2357 0px 1px 10px 4px;
+.wrapper {
+  box-shadow: #1F2937 0px 1px 10px 2px;
+  background-color: #1F2937;
 }
 
-h1 {
+.title {
   cursor: pointer;
-  font-size: 3rem;
+  font-size: 2rem;
   transition: 0.5s ease-in-out;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
 }
-h1:hover {
-  color: #FD2357;
+.title:hover {
+  color: #4a698d;
 }
 
-ul {
+.nav-ul {
   list-style: none;
   display: flex;
   align-items: center;
   gap: 1rem;
   font-size: 1.5rem;
 }
-ul > li {
+.nav-ul > li {
   cursor: pointer;
   transition: 0.25s ease-in-out;
+  color: #ffffff;
 }
-ul > li:hover {
-  color: #FD2357;
+.nav-ul > li > a {
+  color: #ffffff !important;
+}
+.nav-ul > li > a:hover {
+  color: #4a698d !important;
 }/*# sourceMappingURL=NavBar.css.map */

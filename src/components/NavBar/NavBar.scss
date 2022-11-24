@@ -1,19 +1,22 @@
 .wrapper {
-    box-shadow: #a7ff83 0px 1px 10px 4px;
+    box-shadow: #1F2937 0px 1px 10px 2px;
+    background-color: #1F2937;
 }
 
 .title {
     cursor: pointer;
-    font-size: 3rem;
+    font-size: 2rem;
     transition: .5s ease-in-out;
-    color: #a7ff83;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: .15rem;
 
     &:hover {
-        color: #ffffff;
+        color: #4a698d;
     }
 }
 
-ul {
+.nav-ul {
     list-style: none;
     display: flex;
     align-items: center;
@@ -22,5 +25,13 @@ ul {
     & > li {
         cursor: pointer;
         transition: .25s ease-in-out;
+        color: #ffffff;
+        & > a {
+            color: #ffffff !important;
+
+            &:hover {
+                color: #4a698d !important;
+            }
+        }
     }
 }

@@ -8,10 +8,11 @@
   border-radius: 5px;
   text-align: center;
   transition: 0.5s ease-in-out;
+  color: #ffffff;
 }
 .carrito:hover {
   background-color: #ffffff;
-  color: #0d1b2a;
+  color: #1F2937;
 }
 .carrito > span {
   font-weight: 600;

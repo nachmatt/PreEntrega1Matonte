@@ -1,0 +1,12 @@
+.Cambio el 'app.jsx' del 'index.js' por un componente 'RouterProvider'
+.Al 'RouterProvider' le ingreso la prop {router}
+.Creo en la carpeta router el componente 'index.js' y le importo el método 'createBrowserRouter'
+.En ese archivo exporto el método 'createBrowserRouter()' dentro de la constante 'router'
+.Dicho método va a contener las diferentes rutas
+.En el index.js root importo el {router}
+
+.creo un 'Layout' component, que va a envolver cada view con un 'Navbar' y 'Footer' 
+y mediante children ingresarle lo que sea necesario
+.wrappeo 'en App.js' los componentes con 'Layout'
+
+.usamos la función useParams() para indicar rutas dinámicas

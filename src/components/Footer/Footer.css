@@ -1,1 +1,30 @@
-/*# sourceMappingURL=Footer.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Flow+Rounded&family=Russo+One&display=swap");
+.footer-wrapper {
+  box-shadow: #1F2937 0px 0px 5px 1px;
+  background-color: #1F2937;
+  color: #ffffff;
+  padding: 0.75rem;
+}
+
+.title {
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 2.5rem;
+  transition: 0.5s ease-in-out;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+  font-family: "Bungee", cursive;
+  margin: 0 auto;
+}
+.title:hover {
+  color: #4a698d;
+}
+.title > span {
+  font-family: "Flow Rounded", cursive;
+  font-size: 1.5rem;
+  letter-spacing: -0.09rem;
+  margin-left: 1rem;
+}/*# sourceMappingURL=Footer.css.map */

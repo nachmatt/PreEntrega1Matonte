@@ -1,0 +1,25 @@
+.item-count-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.item-count-wrapper button {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  background-color: #364F6B;
+  box-shadow: #364F6B 0px 0px 5px 1px;
+  color: #ffffff;
+  line-height: 2.2rem;
+  font-weight: bold;
+  transition: 0.25s ease-in-out;
+}
+.item-count-wrapper button:hover {
+  background-color: #ffffff;
+  color: #364F6B;
+}/*# sourceMappingURL=ItemCount.css.map */
