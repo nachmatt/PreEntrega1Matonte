@@ -1,15 +1,18 @@
 .wrapper {
     box-shadow: #1F2937 0px 1px 10px 2px;
     background-color: #1F2937;
+    font-family: 'Bungee', cursive;
 }
 
 .title {
     cursor: pointer;
-    font-size: 2rem;
+    width: fit-content;
+    font-size: 2.5rem;
     transition: .5s ease-in-out;
     color: #ffffff;
     font-weight: bold;
     letter-spacing: .15rem;
+    margin: 0 auto;
 
     &:hover {
         color: #4a698d;
