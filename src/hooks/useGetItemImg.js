@@ -9,7 +9,6 @@ export const useGetItemImg = (productImg) => {
     useEffect(() => {
         getDownloadURL(productImgRef)
         .then((data) => setImg(data))
-        .then(console.log(img))
         .catch((err) => console.error({ err }));
     }, [productImgRef]);
 

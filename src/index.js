@@ -10,8 +10,8 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBsz0s2Gj-VhjR2eBAar6vgU_m9jpdMwHA",
-  authDomain: "coder-ecommerce-3b4c3.firebaseapp.com",
+  apiKey: process.env.FIRESTORE_API_KEY,
+  authDomain: process.env.FIRESTORE_AUTH_DOMAIN,
   projectId: "coder-ecommerce-3b4c3",
   storageBucket: "coder-ecommerce-3b4c3.appspot.com",
   messagingSenderId: "1082797712044",
@@ -31,7 +31,4 @@ root.render(
 
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

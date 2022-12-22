@@ -8,8 +8,8 @@ const Item = ( {product, totalAmount, children} ) => {
     const navigate = useNavigate();
     
     const img = useGetItemImg(product.img);
-    const description = product.description.slice(0, 30);
-    const title = product.name.slice(0, 20);
+    const description = product.description.slice(0, 60);
+    const title = product.name.slice(0, 30);
 
     function handleNavigate() {
         navigate(`/item/${product.id}`);
@@ -22,8 +22,8 @@ const Item = ( {product, totalAmount, children} ) => {
     return (
             <ul className='items-wrapper' onClick={handleNavigate}>
                 <img src={img} alt="Product"/>
-                <li className="product-name">{product.name.length > 20 ? `${title} ...` : product.name}</li>
-                <li className="product-description">{product.description.length > 30 ? `${description} ...` : product.description}</li>
+                <li className="product-name">{product.name.length > 30 ? `${title} ...` : product.name}</li>
+                <li className="product-description">{product.description.length > 60 ? `${description} ...` : product.description}</li>
                 <li className="product-price">Precio: <span>${product.price}</span></li>
                 <li className={product.stock === 0 ? "no-stock" : "yup-stock"}> 
                     {product.stock === 0 

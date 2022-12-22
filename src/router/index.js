@@ -3,6 +3,7 @@ import App from '../App';
 import Cart from '../Views/Cart';
 import Category from '../Views/Category'
 import Item from '../Views/Item';
+import Error from '../Views/Error';
 
 export const router = createBrowserRouter([
     {
@@ -20,5 +21,9 @@ export const router = createBrowserRouter([
     {
         path: '/cart',
         element: <Cart />
+    },
+    {
+        path: '*',
+        element: <Error />
     }
 ])

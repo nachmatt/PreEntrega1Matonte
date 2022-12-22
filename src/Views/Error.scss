@@ -1,0 +1,17 @@
+.error-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    h1 {
+        margin: 2rem;
+    }
+
+    button {
+        padding: .5rem;
+        font-size: 1.3rem;
+        border-radius: 5px;
+    }
+}
