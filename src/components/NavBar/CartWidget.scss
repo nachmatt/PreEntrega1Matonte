@@ -1,20 +1,25 @@
-.carrito {
+.carrito {    
     padding: .3rem;
     width: 5.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: .5rem;
-    border-radius: 5px;
-    text-align: center;
-    transition: .5s ease-in-out;
-    color: #ffffff;
-
-    &:hover {
-        background-color: #ffffff;
-        color: #1F2937;
-    }
-    & > span {
+    
+    & > a {
+        padding: .3rem;
+        width: 5.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        border-radius: 5px;
+        text-align: center;    
+        color: #ffffff;
+        text-decoration: none;
+        transition: .5s ease-in-out;
         font-weight: 600;
+        
+        &:hover {
+            background-color: #ffffff;
+            color: #1F2937;
+        }
     }
+
 }

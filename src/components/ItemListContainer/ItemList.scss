@@ -10,25 +10,35 @@
 @media only screen and (min-width: 860px) {
     .card-wrapper {
         display: grid;
-        grid-template-columns:  1fr 1fr ;
-        gap: 2rem;
-        
+        grid-template-columns:  1fr ;
+        gap: 2rem;   
+    }
+
+    .item-list-wrapper {
+        max-width: 800px;
     }
 }
 
 @media only screen and (min-width: 1300px) {
     .card-wrapper {
         display: grid;
-        grid-template-columns:  1fr 1fr 1fr;
+        grid-template-columns:  1fr;
         gap: 1.5rem;
+    }
+
+    .item-list-wrapper {
+        max-width: 800px;
     }
 }
 
 @media only screen and (min-width: 1750px) {
     .card-wrapper {
         display: grid;
-        grid-template-columns:  1fr 1fr 1fr 1fr;
+        grid-template-columns:  1fr;
         gap: 2rem;
-        
+    }
+    
+    .item-list-wrapper {
+        max-width: 800px;
     }
 }

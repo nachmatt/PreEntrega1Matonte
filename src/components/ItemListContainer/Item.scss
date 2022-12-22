@@ -1,10 +1,10 @@
 .items-wrapper {
-    background-color: #1F2937;
     border-radius: 5px;
     padding: 1rem;
     list-style-type: none;
-    color: #ffffff;
-    box-shadow: black 0px 0px 5px 1px;
+    background-color: #1f2937;
+    color: aliceblue;
+    box-shadow: rgba(105, 104, 104, 0.25) 0px 0px 5px 1px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,6 +24,42 @@
     }
 
     &:hover {
-        transform: scale(1.05);
+        box-shadow: rgba(105, 104, 104, 0.8) 0px 0px 4px 2px;;
     }
+}
+
+.children-container {
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+}
+
+.product-name {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.product-description {
+    font-size: 1.25rem;
+    color: rgba(240, 248, 255, 0.822);
+}
+
+.product-price {
+    font-size: 1.25rem;
+
+    span {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+}
+
+.no-stock {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: rgba(77, 85, 92, 0.822);
+}
+
+.yup-stock {
+    font-size: 1.25rem;
+    font-weight: 500;
 }

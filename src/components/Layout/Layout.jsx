@@ -5,9 +5,11 @@ import './Layout.scss'
 
 export const Layout = ( { children } ) => {
     return (
-        <div className='layout-wrapper '>
+        <div className='layout-wrapper'>
             <NavBar />
-                {children}
+                <div className='children-wrapper'>
+                    {children}
+                </div>
             <Footer />
         </div>
     )

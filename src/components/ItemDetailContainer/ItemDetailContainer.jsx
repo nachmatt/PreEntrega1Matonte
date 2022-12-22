@@ -1,30 +1,17 @@
-import React, { useState, useEffect } from 'react'
-import ItemDetail from './ItemDetail'
-import { useParams } from "react-router-dom";
-
-//Mock
-import { itemsMock } from '../../mocks/items.mock';
-
-// //Loader
+import { useGetItem } from "../../hooks/useGetItem";
 import { Ring } from '@uiball/loaders'
+import ItemDetail from "./ItemDetail";
 
 const ItemDetailContainer = () => {
-    const [products, setProducts] = useState(null);
-    const { id } = useParams();
+    const items = useGetItem();
 
-    useEffect(() => {
-        new Promise((resolve) =>
-            setTimeout(() => resolve(itemsMock.find((product) => product.id === id)), 500)
-        ).then((data) => setProducts(data));
-    }, [id]);
-
-    if (!products) {
+    if (!items) {
         return <Ring />;
     }
 
     return (
         <div className="flex justify-center items-center ">
-            <ItemDetail products={products} />
+            <ItemDetail product={items} />
         </div>
     );
 }

@@ -105,7 +105,7 @@ export const itemsMock = [
         category: 'keyboard',
         description: '',
         price: 80,
-        stock: 5,
+        stock: 33,
         img: Keyboard
     },
     { 
@@ -114,7 +114,7 @@ export const itemsMock = [
         category: 'keyboard',
         description: '',
         price: 80,
-        stock: 5,
+        stock: 27,
         img: Keyboard
     },
     { 
@@ -123,7 +123,7 @@ export const itemsMock = [
         category: 'keyboard',
         description: '',
         price: 80,
-        stock: 5,
+        stock: 30,
         img: Keyboard
     },
     { 
@@ -132,7 +132,7 @@ export const itemsMock = [
         category: 'desk',
         description: '',
         price: 200,
-        stock: 5,
+        stock: 20,
         img: Desk
     },
     { 
@@ -141,7 +141,7 @@ export const itemsMock = [
         category: 'coolers',
         description: '',
         price: 240,
-        stock: 5,
+        stock: 36,
         img: Cooler
     },
 ];

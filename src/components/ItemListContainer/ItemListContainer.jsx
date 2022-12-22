@@ -1,43 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import ItemList from './ItemList';
-
-//Loader
 import { Ring } from '@uiball/loaders'
-//Mock
-import { itemsMock } from '../../mocks/items.mock';
+import { useGetItem } from "../../hooks/useGetItem";
+import ItemList from "./ItemList";
 
 const ItemListContainer = () => {
-    const { category } = useParams()
-    const [products, setProducts] = useState([]);
+    const items = useGetItem();
 
-    useEffect(() => {
-        new Promise((resolve) => {
-            // Reset the state to show the loading spinner
-            setProducts([]);
-
-            return setTimeout(() => {
-                resolve(itemsMock);
-            }, 500);
-        }).then((data) => {
-            if (category) {
-                const categories = data.filter(
-                    (product) => product.category === category
-                );
-                setProducts(categories);
-            } else {
-                setProducts(data);
-            }
-        });
-    }, [category]);
-
-    if (products.length === 0) {
+    if (!items) {
         return <Ring />;
     }
-
-    return (
+    return (  
         <div className='container-fluid mt-5'>
-            <ItemList products={products}></ItemList>
+            <ItemList products={items}></ItemList>
         </div>
     )
 }

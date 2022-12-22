@@ -1,13 +1,18 @@
-import React, { useState } from 'react'
+import { useContext, useState } from 'react'
 import { useNavigate } from "react-router-dom";
-import { ItemCount } from "../ItemListContainer/ItemCount";
+import { ItemCount } from './ItemCount.jsx'
+import { CartContext } from '../../contexts/CartContextProvider.jsx';
+import { useGetItemImg } from '../../hooks/useGetItemImg.js';
+
 import './ItemDetail.scss'
 
-const ItemDetail = ({ products }) => {
+const ItemDetail = ({ product }) => {
+    const {addItem, isInCart} = useContext(CartContext)
     const navigate = useNavigate();
     const [count, setCount] = useState(1);
-    const [currentStock, setCurrentStock] = useState(products.stock);
+    const [currentStock, setCurrentStock] = useState(product.stock);
     const maxQuantity = currentStock;
+    const img = useGetItemImg(product.img);
 
     function handleCount(type) {
         if (type === "plus" && count < maxQuantity) setCount(count + 1);
@@ -17,6 +22,7 @@ const ItemDetail = ({ products }) => {
     function handleAdd() {
         if (currentStock < count) alert("No hay suficiente stock de este producto");
         else setCurrentStock(currentStock - count);
+        addItem(product, count);
     }
     
     function handleCheckout() {
@@ -25,12 +31,12 @@ const ItemDetail = ({ products }) => {
 
     return (
     <div className="item-detail-wrapper container">
-        <img src={products.img} alt={products.name} />
+        <img src={img} alt={product.name} />
 
         <div className="item-detail-description">
-            <h2>{products.name}</h2>
-            <p>{products.description}</p>
-            <span>Price: <strong>${products.price}</strong></span>
+            <h2>{product.name}</h2>
+            <p>{product.description}</p>
+            <span>Price: <strong>${product.price}</strong></span>
             {currentStock > 0 && (<p>In Stock: <strong>{currentStock}</strong> </p>)}
 
             <div className="item-detail-count">
